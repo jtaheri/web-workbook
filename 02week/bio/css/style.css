@@ -1,0 +1,48 @@
+body {
+ background-image: url("http://gipsypixel.com/wp-content/uploads/2017/11/Widescreen-Of-Here-Are-The-Steps-To-Create-For-Ers-Journey-Blurred-City-Lights-Wallpaper-High-Quality-Mobile-Phones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body{
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+a:hover {
+  color: white;
+}
+nav {
+  text-align: right;
+}
+nav a {
+  background: gray;
+  color: black;
+  padding: 5px 15px;
+}
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+h1 {
+  color: black;
+  text-align: center;
+  /* there is probably a better way to align the img to center than putting it inside h2 and centering h2 */
+  text-shadow: 2px 2px blue;
+}
+h2 {
+  text-align: center;
+}
+p {
+  background-color: rgba(112,112,112,0.5);
+  padding: 8px;
+  margin: auto;
+  hyphens: auto;
+  width: 400px;
+  height: 220px;
+}
+footer {
+  font-size: 120%;
+  font-weight: bold;
+  vertical-align: bottom;
+  color: #116987;
+}

@@ -1,0 +1,62 @@
+body {
+ background-image: url("https://cdn.pixabay.com/photo/2017/02/14/09/50/turquoise-2065460_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body{
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+a:hover {
+  color: white;
+}
+nav {
+  text-align: right;
+}
+nav a {
+  background: gray;
+  color: black;
+  padding: 5px 15px;
+}
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+h1 {
+  color: black;
+  text-align: center;
+  /* there is probably a better way to align the img to center than putting it inside h2 and centering h2 */
+  text-shadow: 2px 2px blue;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  background-color: rgba(112,112,112,0.5) !important;
+  padding:8px;
+  width: 300px;
+  margin: auto;
+}
+p:hover:first-letter {
+    font-size: 150%;
+    color: yellow;
+}
+h3:nth-child(3) {
+  background-color: red;
+}
+p {
+  background-color: rgba(112,112,112,0.5);
+  padding: 8px;
+  margin: auto;
+  hyphens: auto;
+  width: 400px;
+  height: 220px;
+}
+footer {
+  font-size: 120%;
+  font-weight: bold;
+  vertical-align: bottom;
+  color: #116987;
+}

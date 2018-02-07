@@ -1,10 +1,6 @@
 .navigationPane {
-  diplay: flex;
-  justify-content: flex-end;
-  width: 15%;
-  background-color: blue;
-  border-
+  float:left;
 }
-.home {
-  background-color: gray;
+.links {
+  float: left;
 }

@@ -1,0 +1,76 @@
+body {
+  font-family: 'Assistant', sans-serif;
+}
+.bottom {
+  width: 850px;
+  height: 324px;
+  background-color: lightgrey;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 90%
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/nasa-background.jpg");
+  width: 850px;
+  height: 450px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 500%;
+  font-weight: bold;
+  color: white;
+}
+.soc {
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+}
+.office {
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellow; */
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+li {
+  list-style-type: none;
+  padding: 3px 0px;
+}
+ul {
+  padding: 0px;
+}
+/* .name {
+  padding-top: 20px;
+} */
+.nameBox {
+  background-color: white;
+  height: 30px;
+  width: 250px;
+}
+.message {
+  padding-top: 10px;
+}
+.messageBox {
+  background-color: white;
+  height: 70px;
+  width: 250px;
+}
+.send {
+  padding-top: 10px;
+  width: 80px;
+  height: 200px;
+}
+.sendButton {
+  color: white;
+  background-color: #37383a;
+  padding: 3px;
+  text-align: center;
+  font-size: 150%;
+}

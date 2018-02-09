@@ -1,0 +1,13 @@
+.mainContainer {
+  background: black;
+  height: 450px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

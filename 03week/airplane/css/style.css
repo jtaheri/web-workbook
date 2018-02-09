@@ -1,1 +1,136 @@
-
+.topBar {
+  display: flex;
+  width: 100%;
+  background-color: #123754;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #123754;
+  align-items: center;
+  padding-right: 5%;
+  color: lightgray;
+  width: 30%;
+  justify-content: space-around;
+}
+.logo {
+  display: flex;
+  padding-left: 5%;
+}
+.home {
+  color: teal;
+}
+.main {
+  margin-top: 1px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/airline.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mainBox {
+  margin-top: 7%;
+  margin-left: 7%;
+  width: 330px;
+  height: 250px;
+  background-color: #123754;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.plane {
+  padding: 0 30px;
+  background-color: royalblue;
+}
+.hotel {
+  padding: 0 30px;
+  background-color: teal;
+}
+.car {
+  padding: 0 30px;
+  background-color: teal;
+}
+.bottom {
+  width: 100%;
+  height: 100%;
+  background-color: #123754;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px; */
+}
+.depart {
+  border-color: white;
+  float: left;
+}
+.departText {
+  background-color: #203751;
+  margin-top: 20px;
+  margin-left: 20px;
+  float:left;
+}
+.arriveText {
+  background-color: #203751;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px
+}
+.departCal {
+  border-color: white;
+  background-color: #203751;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  float:left;
+}
+.arriveCal {
+  border-color: white;
+  background-color: #203751;
+  color: white;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px
+}
+.passengerCount {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  float:left;
+  background-color: #203751;
+}
+.passengerNum {
+  border-color: white;
+  background-color: #203751;
+  color: white;
+}
+.search {
+  background-color: royalblue;
+  width: 90%;
+  height: 60%;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:20px;
+  margin-top: 20px;
+}
+.radio {
+  color: white;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.bottom div {
+  height: 60px
+}

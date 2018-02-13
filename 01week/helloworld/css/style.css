@@ -1,4 +1,21 @@
-body {
+/* body {
   display: flex;
-  background-color: black;
+} */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top {
+  background-color: gray;
+}
+
+.storePhoto {
+  background-image: url(https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/705694_135159359972620_2083723277_o.jpg?oh=e6052619bd352a9eee59a7db5de0cf86&oe=5B0D663F);
+  background-size: cover;
+  width: 500px;
+  height: 200px;
+
 }

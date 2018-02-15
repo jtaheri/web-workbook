@@ -1,0 +1,68 @@
+.titleContainer {
+  height: 350px;
+  background-color: #63cac0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200%;
+  font-family: "times new roman";
+}
+.titleContainer span {
+  font-weight: 600;
+}
+h1 {
+  font-weight: 100;
+}
+.mainContainer {
+  background: black;
+  height: 450px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  /* I need to learn how to use this to center a column vertically without spreading
+  out the content and then having to use a margin instead */
+  /* justify-content: center; */
+  width: 150px;
+  text-align: center;
+  margin-top: 50px;
+  color: lightgray;
+}
+.column:nth-child(1) {
+  border-top-style: solid;
+  border-top-color: #55a7d8;
+  border-top-width: 30px;
+}
+.column:nth-child(2) {
+  border-top-style: solid;
+  border-top-color: #63cac0;
+  border-top-width: 30px;
+}
+.column:nth-child(3) {
+  border-top-style: solid;
+  border-top-color: #e46f41;
+  border-top-width: 30px;
+}
+@media (max-width: 768px) {
+  .mainContainer {
+    background-color: white;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    background-color: #f7f5f6;
+  }
+  .titleContainer {
+    background-color: #55a7d8;
+    padding-left: 90px
+  }
+  .column {
+    color: black;
+    width: 33%;
+  }
+}

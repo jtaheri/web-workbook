@@ -1,0 +1,41 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+
+.container {
+  width: 300px;
+  display: grid;
+  justify-items: center;
+  transition-duration: 5s;
+  margin-top: 20px;
+}
+
+.container > div {
+  background-color: orange;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.container:hover > div:nth-child(odd){
+  background-color: red;
+  transform: scale(2) translate(200px) rotate(180deg);
+  transition-duration: 5s;
+}
+
+.container:hover > div:nth-child(even){
+ background-color: blue;
+ transform: scale(0.5) translate(-400px) rotate(-180deg);
+ transition-duration: 2s;
+}
+
+.container > div:nth-child(odd){
+  background-color: black;
+  transition-duration: 5s;
+}
+
+.container > div:nth-child(even){
+  background-color: gray;
+  transition-duration: 2s;
+}

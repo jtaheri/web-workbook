@@ -1,0 +1,499 @@
+body {
+  margin: 15px;
+}
+
+.title {
+  display: grid;
+  justify-content: center;
+  font-size: 250%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title p {
+  display: grid;
+  justify-content: center;
+  font-size: 50%;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "a a b b"
+    "a a b b"
+    "c c d x"
+    "c c d x"
+    "c c e e"
+    "f g h i"
+    "f g h i";
+  grid-gap: 20px;
+}
+
+/* .box1 img {
+  width: 240px;
+} */
+
+.container > div {
+  border: 1px solid black;
+}
+
+.box1 {
+  grid-area: a;
+  display: grid;
+  grid-template-areas:
+    "a b b"
+    "a b b"
+    "a c d";
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.box1 img {
+  width: 240px;
+}
+
+.box11 {
+  grid-area: a;
+}
+
+.box12 {
+  grid-area: b;
+  border-bottom: 1px solid black;
+}
+
+.box13 {
+  grid-area: c;
+  color: red;
+}
+
+.box14 {
+  grid-area: d;
+  background-color: red;
+}
+
+.box2 {
+  grid-area: b;
+  display: grid;
+  grid-template-areas:
+    "a b b"
+    "a b b"
+    "a c d";
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.box2 img {
+  width: 240px;
+}
+
+.box3 {
+  grid-area: c;
+  display: grid;
+  grid-template-areas:
+  "a a"
+  "b b"
+  "c d";
+  /* grid-gap: 20px; */
+  padding: 20px;
+}
+
+.box31 {
+  grid-area: a;
+  margin-bottom: 10px;
+}
+
+.box32 {
+  grid-area: b;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.box33 {
+  grid-area: c;
+  color: red;
+  align-self: end;
+}
+
+.box34 {
+  grid-area: d;
+  background-color: red;
+  width: 60px;
+  height: 40px;
+  justify-self: end;
+  align-self: end;
+}
+
+.box3 img {
+  width: 100%;
+  height: 150px;
+  /* intentionally stretched image just to fit the template rather than finding one with dimensions that fit better */
+}
+
+.box4 {
+  grid-area: d;
+  margin-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c d";
+}
+
+.box4 img {
+  width: 100%;
+  height: 100px;
+}
+
+.box41 {
+  grid-area: a;
+  margin: 0 20px;
+  margin-bottom: 5px;
+}
+
+.box42 {
+  grid-area: b;
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+
+.box43 {
+  color: red;
+  padding-left: 0px;
+  grid-area: c;
+  margin-left: 5px;
+}
+
+.box44 {
+  background-color: red;
+  width: 60px;
+  grid-area: d;
+  justify-self: right;
+  margin-right:5px;
+}
+
+.box5 {
+  grid-area: x;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c d";
+}
+
+.box5 img {
+  width: 100%;
+  height: 100px;
+}
+
+.box6 {
+  grid-area: e;
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "a a c";
+  padding: 0 15px;
+}
+
+.box6 img {
+  width: 100%;
+  height: 125px;
+  /* how did this height and width work? like 100% of what? */
+}
+
+.box61 {
+  grid-area: a;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-bottom: 10px
+}
+
+.box62 {
+  grid-area: b;
+  margin-top: 10px;
+}
+
+.box63 {
+  grid-area: c;
+  color: red;
+  align-self: end;
+  margin-bottom: 5px;
+}
+
+.box64 {
+  grid-area: c;
+  justify-self: end;
+  background-color: red;
+  margin-bottom: 5px;
+  width: 60px;
+  height: 20px;
+  align-self: end;
+}
+
+.box7 {
+  grid-area: f;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+
+.box7 img, .box8 img, .box9 img, .box10 img {
+  width: 280px;
+  height: 150px;
+}
+
+.box71 {
+  grid-area: a;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.box71, .box72 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box72 {
+  grid-area: b;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  padding-bottom: 3px;
+}
+
+.box73 {
+  grid-area: c;
+  align-self: end;
+  justify-self: start;
+  color: red;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.box74 {
+  grid-area: c;
+  background-color: red;
+  width: 60px;
+  height: 20px;
+  justify-self: end;
+  align-self: end;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.box8 {
+  grid-area: g;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+
+.box9 {
+  grid-area: h;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+
+.box10 {
+  grid-area: i;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+
+/* tablet layout */
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "a a"
+      "a a"
+      "b c"
+      "b c"
+      "d d"
+      "e f"
+      "g h"
+      "i i"
+      "j j";
+    grid-gap: 20px;
+  }
+
+  .box1 {
+    grid-area: i;
+  }
+
+  .box2 {
+    grid-area: j;
+  }
+
+  .box3 {
+    grid-area: a;
+  }
+
+  .box4 {
+    grid-area: b;
+  }
+
+  .box5 {
+    grid-area: c;
+  }
+
+  .box6 {
+    grid-area: d;
+  }
+
+  .box7 {
+    grid-area: e;
+  }
+
+  .box8 {
+    grid-area: f;
+  }
+
+  .box9 {
+    grid-area: g;
+  }
+
+  .box10 {
+    grid-area: h;
+  }
+}
+
+/* mobile layout */
+@media (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      "j";
+  }
+
+  .box1 {
+    grid-area: a;
+  }
+
+  .box2 {
+    grid-area: b;
+  }
+
+  .box3 {
+    grid-area: c;
+  }
+
+  .box4 {
+    grid-area: d;
+    margin-right: 0px;
+  }
+
+  .box5 {
+    grid-area: e;
+  }
+
+  .box6 {
+    grid-area: f;
+  }
+
+  .box7 {
+    grid-area: g;
+  }
+
+  .box8 {
+    grid-area: h;
+  }
+
+  .box9 {
+    grid-area: i;
+  }
+
+  .box10 {
+    grid-area: j;
+  }
+
+  .container > div {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    padding: 0px;
+  }
+
+  .container img {
+    width: 280px;
+    height: 170px;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* why isn't this image centering? */
+  }
+
+  .box11, .box21, .box31, .box41, .box51, .box61, .box71 {
+    grid-area: a;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 280px;
+    height: 170px;
+    justify-self: center;
+  }
+
+  .box11 img, .box21 img, .box31 img, .box41 img, .box51 img, .box61 img, .box71 img {
+    width: 280px;
+    height: 170px;
+  }
+
+  .box11, .box21, .box31, .box41, .box51, .box61, .box71, .box12, .box22, .box32, .box42, .box52, .box62, .box72 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .box12, .box22, .box32, .box42, .box52, .box62, .box72 {
+    grid-area: b;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    width: 280px;
+    justify-self: center;
+  }
+
+  .box13, .box23, .box33, .box43, .box53, .box63, .box73 {
+    grid-area: c;
+    align-self: end;
+    justify-self: start;
+    color: red;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  .box14, .box24, .box34, .box44, .box54, .box64, .box74 {
+    grid-area: c;
+    background-color: red;
+    width: 60px;
+    height: 20px;
+    justify-self: end;
+    align-self: end;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+}
